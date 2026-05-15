@@ -28,43 +28,53 @@
 
 ---
 
-## 🏗️ System Architecture
+## 🏗️ Project Architecture & Design System
 
-Aristotle Pro is built on a modular, decoupled architecture designed for high-performance research and scalability.
+Aristotle Pro follows a **Modular Monolith** pattern, ensuring clean separation of concerns and easy extensibility.
 
-### 🔄 System Workflow
+### 🔄 System Workflow (RAG Pipeline)
 ```mermaid
-graph LR
-    A[PDF Upload] --> B[Text Extraction]
-    B --> C[Recursive Chunking]
-    C --> D[Embedding Generation]
-    D --> E[FAISS Indexing]
-    E --> F[Semantic Retrieval]
-    F --> G[Contextual Prompting]
-    G --> H[Multilingual Response]
+graph TD
+    A[User Uploads PDF] --> B[loaders: Document Loading]
+    B --> C[chunking: Recursive Splitting]
+    C --> D[embeddings: Vector Encoding]
+    D --> E[vectorstore: FAISS Indexing]
+    E --> F[retriever: Semantic Search]
+    F --> G[chains: RAG Orchestration]
+    G --> H[ui: Aether V2 Display]
 ```
+
+### 🧱 Core Architecture Layers
+
+| Layer | Responsibility | Key Components |
+| :--- | :--- | :--- |
+| **Presentation** | Multi-page UI & Styles | `src.ui`, `components.py`, `sidebar.py` |
+| **Orchestration** | Decision making & Memory | `src.chains`, `chat_memory.py` |
+| **Intelligence** | LLM & Inference handling | `src.llm`, `groq_client.py`, `prompts` |
+| **Data/Storage** | Document parsing & Vectorizing | `src.vectorstore`, `loaders`, `chunking` |
+| **Security** | Stealth mode & Error hardening | `components.py`, `logger.py` |
 
 ---
 
-## 📂 Project Structure
+## 📂 Folder Structure
 
 ```text
 ai-pdf-chatbot/
 ├── app.py                # Main Application Entry Point
 ├── src/
-│   ├── chains/           # RAG Chain & Orchestration Logic
-│   ├── chunking/         # Text Splitting & Normalization
-│   ├── config/           # Global Settings & API Management
-│   ├── embeddings/       # Embedding Model Integrations
-│   ├── llm/              # LLM Client (Groq/Llama)
-│   ├── loaders/          # Document & OCR Parsers
-│   ├── memory/           # Persistent Session Memory
-│   ├── prompts/          # Anti-Hallucination System Prompts
-│   ├── ui/               # Aether Pro Design System & Components
-│   ├── utils/            # Translation, Logging & Helpers
-│   └── vectorstore/      # FAISS Vector Storage Logic
-├── tests/                # Automated Logic Validation
-├── logs/                 # Secure System Logging
+│   ├── chains/           # LangChain RAG Logic
+│   ├── chunking/         # Text Normalization & Splitting
+│   ├── config/           # API Keys & Engine Settings
+│   ├── embeddings/       # HuggingFace/Neural Embeddings
+│   ├── llm/              # LLM Interface (Groq/Llama)
+│   ├── loaders/          # PDF & Image Parsers
+│   ├── memory/           # Conversational Context Management
+│   ├── prompts/          # Anti-Hallucination Logic (Hindi/English)
+│   ├── retriever/        # Vector Store Search Strategy
+│   ├── ui/               # Aether V2 Premium Components
+│   ├── utils/            # Multilingual Translators & Loggers
+│   └── vectorstore/      # FAISS High-Performance Storage
+├── phto/                 # Visual Brand Assets
 └── requirements.txt      # Production Dependency Manifest
 ```
 
@@ -73,11 +83,11 @@ ai-pdf-chatbot/
 ## 🛠️ Tech Stack
 
 - **Core**: Python 3.10+
-- **Frontend**: Streamlit (Advanced CSS)
-- **RAG Framework**: LangChain
-- **Database**: FAISS
-- **Model**: Groq Llama-3.3-70b
-- **Styling**: Vanilla CSS (Glassmorphism)
+- **Framework**: Streamlit (Hardened Stealth Mode)
+- **RAG Architecture**: LangChain
+- **Vector Engine**: FAISS
+- **Inference**: Groq (Llama-3.3-70b-Versatile)
+- **Styling**: Vanilla CSS (Aether V2 Design Tokens)
 
 ---
 
@@ -85,7 +95,7 @@ ai-pdf-chatbot/
 
 **Bittu Sharma**  
 *AI Research Lead & Engineer*  
-Building the future of Document Intelligence.
+Dedicated to building the future of Document Intelligence.
 
 ---
 
