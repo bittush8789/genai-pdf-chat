@@ -1,6 +1,10 @@
 import os
+import sys
 from dotenv import load_dotenv
 import streamlit as st
+
+# Ensure the current directory is in sys.path for local imports
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 # Load environment variables
 load_dotenv()
