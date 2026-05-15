@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.env
+data/raw/*
+data/vector_store/*
+.DS_Store
+.venv/
+venv/
+env/

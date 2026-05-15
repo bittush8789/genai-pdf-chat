@@ -1,0 +1,233 @@
+2026-05-16 01:56:24.857 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 01:56:38.935 | INFO     | src.vectorstore.faiss_store:load_vectorstore:44 - No existing vector store found.
+2026-05-16 01:57:12.472 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 01:57:19.412 | INFO     | src.vectorstore.faiss_store:load_vectorstore:44 - No existing vector store found.
+2026-05-16 02:03:02.139 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 02:03:07.814 | INFO     | src.vectorstore.faiss_store:load_vectorstore:44 - No existing vector store found.
+2026-05-16 02:03:54.318 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 02:03:59.641 | INFO     | src.vectorstore.faiss_store:load_vectorstore:44 - No existing vector store found.
+2026-05-16 02:04:09.586 | INFO     | src.loaders.document_loader:clean_raw_data:74 - Cleaned up raw data directory.
+2026-05-16 02:04:09.594 | INFO     | src.loaders.document_loader:save_uploaded_files:23 - Saved uploaded file to D:\Gen-Ai-apps\ai-pdf-chatbot\data\raw\lec19.transformer.pdf
+2026-05-16 02:04:09.595 | INFO     | src.loaders.document_loader:load_documents:37 - Loading PDF: D:\Gen-Ai-apps\ai-pdf-chatbot\data\raw\lec19.transformer.pdf
+2026-05-16 02:04:10.414 | INFO     | src.loaders.document_loader:load_documents:43 - Successfully loaded 102 pages from PDF: lec19.transformer.pdf
+2026-05-16 02:04:10.415 | INFO     | src.chunking.text_splitter:split_documents:17 - Splitting 102 documents. (chunk_size=1000, chunk_overlap=200)
+2026-05-16 02:04:10.418 | INFO     | src.chunking.text_splitter:split_documents:26 - Successfully split into 102 chunks.
+2026-05-16 02:04:10.420 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 02:04:15.726 | INFO     | src.vectorstore.faiss_store:create_and_save_vectorstore:18 - Creating FAISS vector store...
+2026-05-16 02:04:18.073 | INFO     | src.vectorstore.faiss_store:create_and_save_vectorstore:22 - Saving vector store to D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 02:04:18.084 | INFO     | src.ui.sidebar:process_documents:86 - Processing complete.
+2026-05-16 02:04:49.651 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 02:04:54.877 | INFO     | src.vectorstore.faiss_store:load_vectorstore:36 - Loading existing vector store from D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 02:04:54.931 | INFO     | src.retriever.retriever:get_retriever:13 - Configuring retriever (type=similarity, k=4)
+2026-05-16 02:04:54.932 | INFO     | src.llm.groq_client:get_llm:18 - Initializing Groq LLM: llama-3.1-8b-instant
+2026-05-16 02:04:55.574 | INFO     | src.chains.rag_chain:create_rag_chain:33 - Creating history-aware RAG chain
+2026-05-16 02:06:49.665 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 02:06:55.171 | INFO     | src.vectorstore.faiss_store:load_vectorstore:36 - Loading existing vector store from D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 02:07:05.287 | INFO     | src.loaders.document_loader:clean_raw_data:74 - Cleaned up raw data directory.
+2026-05-16 02:07:05.290 | INFO     | src.vectorstore.faiss_store:clear_vectorstore:53 - Cleared existing vector store.
+2026-05-16 02:07:05.298 | INFO     | src.loaders.document_loader:save_uploaded_files:23 - Saved uploaded file to D:\Gen-Ai-apps\ai-pdf-chatbot\data\raw\lec19.transformer.pdf
+2026-05-16 02:07:05.299 | INFO     | src.loaders.document_loader:load_documents:37 - Loading PDF: D:\Gen-Ai-apps\ai-pdf-chatbot\data\raw\lec19.transformer.pdf
+2026-05-16 02:07:05.845 | INFO     | src.loaders.document_loader:load_documents:43 - Successfully loaded 102 pages from PDF: lec19.transformer.pdf
+2026-05-16 02:07:05.846 | INFO     | src.chunking.text_splitter:split_documents:17 - Splitting 102 documents. (chunk_size=1200, chunk_overlap=200)
+2026-05-16 02:07:05.848 | INFO     | src.chunking.text_splitter:split_documents:26 - Successfully split into 102 chunks.
+2026-05-16 02:07:05.849 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 02:07:11.235 | INFO     | src.vectorstore.faiss_store:create_and_save_vectorstore:18 - Creating FAISS vector store...
+2026-05-16 02:07:13.096 | INFO     | src.vectorstore.faiss_store:create_and_save_vectorstore:22 - Saving vector store to D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 02:07:13.101 | INFO     | src.ui.sidebar:process_documents:86 - Processing complete.
+2026-05-16 02:07:19.042 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 02:07:24.426 | INFO     | src.vectorstore.faiss_store:load_vectorstore:36 - Loading existing vector store from D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 02:07:24.463 | INFO     | src.retriever.retriever:get_retriever:13 - Configuring retriever (type=similarity, k=6)
+2026-05-16 02:07:24.464 | INFO     | src.llm.groq_client:get_llm:18 - Initializing Groq LLM: llama-3.1-8b-instant
+2026-05-16 02:07:24.861 | INFO     | src.chains.rag_chain:create_rag_chain:44 - Creating history-aware RAG chain
+2026-05-16 02:08:02.296 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 02:08:08.320 | INFO     | src.vectorstore.faiss_store:load_vectorstore:36 - Loading existing vector store from D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 02:08:08.322 | INFO     | src.retriever.retriever:get_retriever:13 - Configuring retriever (type=similarity, k=6)
+2026-05-16 02:08:08.322 | INFO     | src.llm.groq_client:get_llm:18 - Initializing Groq LLM: llama-3.1-8b-instant
+2026-05-16 02:08:08.710 | INFO     | src.chains.rag_chain:create_rag_chain:44 - Creating history-aware RAG chain
+2026-05-16 02:08:08.803 | ERROR    | src.ui.chat_ui:render_chat_interface:99 - An error occurred while generating the answer: Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.1-8b-instant` in organization `org_01j4rp870cfsbtqyahvx6g2vxa` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 9625, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-05-16 02:13:31.399 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 02:13:37.665 | INFO     | src.vectorstore.faiss_store:load_vectorstore:36 - Loading existing vector store from D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 02:13:37.667 | INFO     | src.retriever.retriever:get_retriever:13 - Configuring retriever (type=similarity, k=4)
+2026-05-16 02:13:38.360 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 02:13:43.729 | INFO     | src.vectorstore.faiss_store:load_vectorstore:36 - Loading existing vector store from D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 02:18:06.544 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 02:18:12.186 | INFO     | src.vectorstore.faiss_store:load_vectorstore:36 - Loading existing vector store from D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 02:19:19.153 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 02:19:24.733 | INFO     | src.vectorstore.faiss_store:load_vectorstore:36 - Loading existing vector store from D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 02:20:11.296 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 02:20:16.754 | INFO     | src.vectorstore.faiss_store:load_vectorstore:36 - Loading existing vector store from D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 02:20:56.525 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 02:21:01.907 | INFO     | src.vectorstore.faiss_store:load_vectorstore:36 - Loading existing vector store from D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 02:21:01.909 | INFO     | src.retriever.retriever:get_retriever:13 - Configuring retriever (type=similarity, k=4)
+2026-05-16 02:21:01.910 | INFO     | src.llm.groq_client:get_llm:18 - Initializing Groq LLM: llama-3.1-8b-instant
+2026-05-16 02:21:02.328 | INFO     | src.chains.rag_chain:create_rag_chain:44 - Creating history-aware RAG chain
+2026-05-16 02:26:43.190 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 02:26:48.768 | INFO     | src.vectorstore.faiss_store:load_vectorstore:36 - Loading existing vector store from D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 02:27:31.055 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 02:27:36.608 | INFO     | src.vectorstore.faiss_store:load_vectorstore:36 - Loading existing vector store from D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 02:27:36.610 | INFO     | src.retriever.retriever:get_retriever:13 - Configuring retriever (type=similarity, k=4)
+2026-05-16 02:27:36.610 | INFO     | src.llm.groq_client:get_llm:18 - Initializing Groq LLM: llama-3.1-8b-instant
+2026-05-16 02:27:37.023 | INFO     | src.chains.rag_chain:create_rag_chain:44 - Creating history-aware RAG chain
+2026-05-16 02:35:52.952 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 02:35:58.443 | INFO     | src.vectorstore.faiss_store:load_vectorstore:36 - Loading existing vector store from D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 02:36:55.273 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 02:37:00.600 | INFO     | src.vectorstore.faiss_store:load_vectorstore:36 - Loading existing vector store from D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 02:37:49.921 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 02:37:55.219 | INFO     | src.vectorstore.faiss_store:load_vectorstore:36 - Loading existing vector store from D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 02:39:02.422 | INFO     | src.loaders.document_loader:clean_raw_data:74 - Cleaned up raw data directory.
+2026-05-16 02:39:02.425 | INFO     | src.vectorstore.faiss_store:clear_vectorstore:53 - Cleared existing vector store.
+2026-05-16 02:39:02.432 | INFO     | src.loaders.document_loader:save_uploaded_files:23 - Saved uploaded file to D:\Gen-Ai-apps\ai-pdf-chatbot\data\raw\lec19.transformer.pdf
+2026-05-16 02:39:02.432 | INFO     | src.loaders.document_loader:load_documents:37 - Loading PDF: D:\Gen-Ai-apps\ai-pdf-chatbot\data\raw\lec19.transformer.pdf
+2026-05-16 02:39:03.019 | INFO     | src.loaders.document_loader:load_documents:43 - Successfully loaded 102 pages from PDF: lec19.transformer.pdf
+2026-05-16 02:39:03.020 | INFO     | src.chunking.text_splitter:split_documents:17 - Splitting 102 documents. (chunk_size=800, chunk_overlap=150)
+2026-05-16 02:39:03.023 | INFO     | src.chunking.text_splitter:split_documents:26 - Successfully split into 102 chunks.
+2026-05-16 02:39:03.025 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 02:39:08.415 | INFO     | src.vectorstore.faiss_store:create_and_save_vectorstore:18 - Creating FAISS vector store...
+2026-05-16 02:39:10.551 | INFO     | src.vectorstore.faiss_store:create_and_save_vectorstore:22 - Saving vector store to D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 02:39:10.559 | INFO     | src.ui.sidebar:process_documents:86 - Processing complete.
+2026-05-16 02:39:20.949 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 02:39:26.261 | INFO     | src.vectorstore.faiss_store:load_vectorstore:36 - Loading existing vector store from D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 02:39:26.338 | INFO     | src.retriever.retriever:get_retriever:13 - Configuring retriever (type=similarity, k=4)
+2026-05-16 02:39:26.338 | INFO     | src.llm.groq_client:get_llm:18 - Initializing Groq LLM: llama-3.1-8b-instant
+2026-05-16 02:39:26.781 | INFO     | src.chains.rag_chain:create_rag_chain:35 - Creating strict RAG chain
+2026-05-16 02:41:26.038 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 02:41:31.429 | INFO     | src.vectorstore.faiss_store:load_vectorstore:36 - Loading existing vector store from D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 02:41:31.432 | INFO     | src.retriever.retriever:get_retriever:13 - Configuring retriever (type=similarity, k=6)
+2026-05-16 02:41:31.432 | INFO     | src.llm.groq_client:get_llm:18 - Initializing Groq LLM: llama-3.1-8b-instant
+2026-05-16 02:41:31.827 | INFO     | src.chains.rag_chain:create_rag_chain:35 - Creating strict RAG chain
+2026-05-16 02:43:29.762 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 02:43:35.396 | INFO     | src.vectorstore.faiss_store:load_vectorstore:36 - Loading existing vector store from D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 02:44:42.563 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 02:44:47.894 | INFO     | src.vectorstore.faiss_store:load_vectorstore:36 - Loading existing vector store from D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 02:46:25.937 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 02:46:31.223 | INFO     | src.vectorstore.faiss_store:load_vectorstore:36 - Loading existing vector store from D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 02:47:39.816 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 02:47:45.162 | INFO     | src.vectorstore.faiss_store:load_vectorstore:36 - Loading existing vector store from D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 02:50:05.569 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 02:50:10.971 | INFO     | src.vectorstore.faiss_store:load_vectorstore:36 - Loading existing vector store from D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 02:51:43.108 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 02:51:48.486 | INFO     | src.vectorstore.faiss_store:load_vectorstore:36 - Loading existing vector store from D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 02:54:11.764 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 02:54:17.340 | INFO     | src.vectorstore.faiss_store:load_vectorstore:36 - Loading existing vector store from D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 02:55:01.421 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 02:55:06.795 | INFO     | src.vectorstore.faiss_store:load_vectorstore:36 - Loading existing vector store from D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 02:55:06.797 | INFO     | src.retriever.retriever:get_retriever:13 - Configuring retriever (type=similarity, k=6)
+2026-05-16 02:55:06.798 | INFO     | src.llm.groq_client:get_llm:18 - Initializing Groq LLM: llama-3.1-8b-instant
+2026-05-16 02:55:07.259 | INFO     | src.chains.rag_chain:create_rag_chain:35 - Creating strict RAG chain
+2026-05-16 03:04:30.142 | INFO     | src.loaders.document_loader:save_uploaded_files:23 - Saved uploaded file to D:\Gen-Ai-apps\ai-pdf-chatbot\data\raw\SLM - M Sc- Linear Algebra.pdf
+2026-05-16 03:04:30.157 | INFO     | src.loaders.document_loader:load_documents:37 - Loading PDF: D:\Gen-Ai-apps\ai-pdf-chatbot\data\raw\SLM - M Sc- Linear Algebra.pdf
+2026-05-16 03:04:33.871 | INFO     | src.loaders.document_loader:load_documents:43 - Successfully loaded 161 pages from PDF: SLM - M Sc- Linear Algebra.pdf
+2026-05-16 03:04:33.872 | INFO     | src.chunking.text_splitter:split_documents:17 - Splitting 161 documents. (chunk_size=1000, chunk_overlap=200)
+2026-05-16 03:04:33.885 | INFO     | src.chunking.text_splitter:split_documents:26 - Successfully split into 276 chunks.
+2026-05-16 03:04:33.885 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 03:04:39.609 | INFO     | src.vectorstore.faiss_store:load_vectorstore:36 - Loading existing vector store from D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 03:05:01.004 | INFO     | src.loaders.document_loader:save_uploaded_files:23 - Saved uploaded file to D:\Gen-Ai-apps\ai-pdf-chatbot\data\raw\SLM - M Sc- Linear Algebra.pdf
+2026-05-16 03:05:01.005 | INFO     | src.loaders.document_loader:load_documents:37 - Loading PDF: D:\Gen-Ai-apps\ai-pdf-chatbot\data\raw\SLM - M Sc- Linear Algebra.pdf
+2026-05-16 03:05:04.361 | INFO     | src.loaders.document_loader:load_documents:43 - Successfully loaded 161 pages from PDF: SLM - M Sc- Linear Algebra.pdf
+2026-05-16 03:05:04.362 | INFO     | src.chunking.text_splitter:split_documents:17 - Splitting 161 documents. (chunk_size=1000, chunk_overlap=200)
+2026-05-16 03:05:04.372 | INFO     | src.chunking.text_splitter:split_documents:26 - Successfully split into 276 chunks.
+2026-05-16 03:05:04.372 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 03:05:09.648 | INFO     | src.vectorstore.faiss_store:load_vectorstore:36 - Loading existing vector store from D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 03:07:52.968 | INFO     | src.loaders.document_loader:save_uploaded_files:80 - Saved uploaded file to D:\Gen-Ai-apps\ai-pdf-chatbot\data\raw\SLM - M Sc- Linear Algebra.pdf
+2026-05-16 03:07:52.969 | INFO     | src.loaders.document_loader:load_documents:24 - Loading PDF: D:\Gen-Ai-apps\ai-pdf-chatbot\data\raw\SLM - M Sc- Linear Algebra.pdf
+2026-05-16 03:07:56.396 | INFO     | src.loaders.document_loader:load_documents:46 - Successfully loaded 161 pages from PDF: SLM - M Sc- Linear Algebra.pdf
+2026-05-16 03:07:56.397 | INFO     | src.chunking.text_splitter:split_documents:17 - Splitting 161 documents. (chunk_size=1000, chunk_overlap=200)
+2026-05-16 03:07:56.407 | INFO     | src.chunking.text_splitter:split_documents:26 - Successfully split into 276 chunks.
+2026-05-16 03:07:56.407 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 03:08:02.133 | INFO     | src.vectorstore.faiss_store:create_and_save_vectorstore:18 - Creating FAISS vector store...
+2026-05-16 03:08:16.163 | INFO     | src.vectorstore.faiss_store:create_and_save_vectorstore:22 - Saving vector store to D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 03:09:40.350 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 03:09:45.722 | INFO     | src.vectorstore.faiss_store:load_vectorstore:36 - Loading existing vector store from D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 03:09:45.837 | INFO     | src.retriever.retriever:get_retriever:13 - Configuring retriever (type=similarity, k=6)
+2026-05-16 03:09:45.838 | INFO     | src.llm.groq_client:get_llm:18 - Initializing Groq LLM: llama-3.1-8b-instant
+2026-05-16 03:09:46.276 | INFO     | src.chains.rag_chain:create_rag_chain:35 - Creating strict RAG chain
+2026-05-16 03:22:56.396 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 03:23:02.900 | INFO     | src.vectorstore.faiss_store:load_vectorstore:36 - Loading existing vector store from D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 03:23:40.062 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 03:23:45.476 | INFO     | src.vectorstore.faiss_store:load_vectorstore:36 - Loading existing vector store from D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 03:23:45.479 | INFO     | src.llm.groq_client:get_llm:18 - Initializing Groq LLM: llama-3.1-8b-instant
+2026-05-16 03:23:46.076 | INFO     | src.chains.rag_chain:create_rag_chain:35 - Creating strict RAG chain
+2026-05-16 03:30:41.578 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 03:30:47.346 | INFO     | src.vectorstore.chroma_store:load_vectorstore:54 - No existing ChromaDB found.
+2026-05-16 03:32:28.679 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 03:32:34.164 | INFO     | src.vectorstore.chroma_store:load_vectorstore:54 - No existing ChromaDB found.
+2026-05-16 03:36:15.559 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 03:36:21.327 | INFO     | src.vectorstore.chroma_store:load_vectorstore:54 - No existing ChromaDB found.
+2026-05-16 03:37:18.797 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 03:37:29.092 | INFO     | src.vectorstore.chroma_store:load_vectorstore:54 - No existing ChromaDB found.
+2026-05-16 03:38:51.127 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 03:38:56.927 | INFO     | src.vectorstore.chroma_store:load_vectorstore:54 - No existing ChromaDB found.
+2026-05-16 03:39:17.663 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 03:39:23.120 | INFO     | src.vectorstore.chroma_store:load_vectorstore:54 - No existing ChromaDB found.
+2026-05-16 03:39:51.418 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 03:39:57.293 | INFO     | src.vectorstore.chroma_store:load_vectorstore:54 - No existing ChromaDB found.
+2026-05-16 03:40:47.235 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 03:40:52.621 | INFO     | src.vectorstore.faiss_store:load_vectorstore:36 - Loading existing vector store from D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 03:41:41.569 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 03:41:46.934 | INFO     | src.vectorstore.faiss_store:load_vectorstore:36 - Loading existing vector store from D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 03:43:13.569 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 03:43:19.448 | INFO     | src.vectorstore.faiss_store:load_vectorstore:36 - Loading existing vector store from D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 03:44:24.219 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 03:44:29.694 | INFO     | src.vectorstore.faiss_store:load_vectorstore:36 - Loading existing vector store from D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 03:44:49.130 | INFO     | src.loaders.document_loader:save_uploaded_files:80 - Saved uploaded file to D:\Gen-Ai-apps\ai-pdf-chatbot\data\raw\SLM - M Sc- Linear Algebra.pdf
+2026-05-16 03:44:49.132 | INFO     | src.loaders.document_loader:load_documents:24 - Loading PDF: D:\Gen-Ai-apps\ai-pdf-chatbot\data\raw\SLM - M Sc- Linear Algebra.pdf
+2026-05-16 03:44:52.877 | INFO     | src.loaders.document_loader:load_documents:46 - Successfully loaded 161 pages from PDF: SLM - M Sc- Linear Algebra.pdf
+2026-05-16 03:44:52.878 | INFO     | src.chunking.text_splitter:split_documents:17 - Splitting 161 documents. (chunk_size=1000, chunk_overlap=200)
+2026-05-16 03:44:52.889 | INFO     | src.chunking.text_splitter:split_documents:26 - Successfully split into 276 chunks.
+2026-05-16 03:44:52.890 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 03:44:58.192 | INFO     | src.vectorstore.faiss_store:create_and_save_vectorstore:18 - Creating FAISS vector store...
+2026-05-16 03:45:15.337 | INFO     | src.vectorstore.faiss_store:create_and_save_vectorstore:22 - Saving vector store to D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 03:45:22.354 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 03:45:27.988 | INFO     | src.vectorstore.faiss_store:load_vectorstore:36 - Loading existing vector store from D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 03:45:28.101 | INFO     | src.llm.groq_client:get_llm:18 - Initializing Groq LLM: llama-3.1-8b-instant
+2026-05-16 03:45:28.693 | INFO     | src.chains.rag_chain:create_rag_chain:35 - Creating strict RAG chain
+2026-05-16 03:49:00.411 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 03:49:05.806 | INFO     | src.vectorstore.faiss_store:load_vectorstore:36 - Loading existing vector store from D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 03:50:35.918 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 03:50:41.352 | INFO     | src.vectorstore.faiss_store:load_vectorstore:36 - Loading existing vector store from D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 03:50:41.861 | INFO     | src.llm.groq_client:get_llm:18 - Initializing Groq LLM: llama-3.1-8b-instant
+2026-05-16 03:50:42.358 | INFO     | src.chains.rag_chain:create_rag_chain:35 - Creating strict RAG chain
+2026-05-16 03:52:02.505 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 03:52:07.860 | INFO     | src.vectorstore.faiss_store:load_vectorstore:36 - Loading existing vector store from D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 03:52:08.364 | INFO     | src.llm.groq_client:get_llm:18 - Initializing Groq LLM: llama-3.1-8b-instant
+2026-05-16 03:52:08.758 | INFO     | src.chains.rag_chain:create_rag_chain:35 - Creating strict RAG chain
+2026-05-16 03:54:23.991 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 03:54:29.378 | INFO     | src.vectorstore.faiss_store:load_vectorstore:36 - Loading existing vector store from D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 03:54:46.002 | INFO     | src.loaders.document_loader:save_uploaded_files:80 - Saved uploaded file to D:\Gen-Ai-apps\ai-pdf-chatbot\data\raw\SLM - M Sc- Linear Algebra.pdf
+2026-05-16 03:54:46.003 | INFO     | src.loaders.document_loader:load_documents:24 - Loading PDF: D:\Gen-Ai-apps\ai-pdf-chatbot\data\raw\SLM - M Sc- Linear Algebra.pdf
+2026-05-16 03:54:49.635 | INFO     | src.loaders.document_loader:load_documents:46 - Successfully loaded 161 pages from PDF: SLM - M Sc- Linear Algebra.pdf
+2026-05-16 03:54:49.636 | INFO     | src.chunking.text_splitter:split_documents:17 - Splitting 161 documents. (chunk_size=1000, chunk_overlap=200)
+2026-05-16 03:54:49.647 | INFO     | src.chunking.text_splitter:split_documents:26 - Successfully split into 276 chunks.
+2026-05-16 03:54:49.648 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 03:54:55.507 | INFO     | src.vectorstore.faiss_store:create_and_save_vectorstore:18 - Creating FAISS vector store...
+2026-05-16 03:55:14.410 | INFO     | src.vectorstore.faiss_store:create_and_save_vectorstore:22 - Saving vector store to D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 03:55:19.826 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 03:55:25.220 | INFO     | src.vectorstore.faiss_store:load_vectorstore:36 - Loading existing vector store from D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 03:55:25.331 | INFO     | src.llm.groq_client:get_llm:18 - Initializing Groq LLM: llama-3.1-8b-instant
+2026-05-16 03:55:25.782 | INFO     | src.chains.rag_chain:create_rag_chain:35 - Creating strict RAG chain
+2026-05-16 03:56:18.477 | INFO     | src.loaders.document_loader:save_uploaded_files:80 - Saved uploaded file to D:\Gen-Ai-apps\ai-pdf-chatbot\data\raw\lec19.transformer.pdf
+2026-05-16 03:56:18.478 | INFO     | src.loaders.document_loader:load_documents:24 - Loading PDF: D:\Gen-Ai-apps\ai-pdf-chatbot\data\raw\lec19.transformer.pdf
+2026-05-16 03:56:19.076 | INFO     | src.loaders.document_loader:load_documents:46 - Successfully loaded 102 pages from PDF: lec19.transformer.pdf
+2026-05-16 03:56:19.076 | INFO     | src.chunking.text_splitter:split_documents:17 - Splitting 102 documents. (chunk_size=1000, chunk_overlap=200)
+2026-05-16 03:56:19.079 | INFO     | src.chunking.text_splitter:split_documents:26 - Successfully split into 102 chunks.
+2026-05-16 03:56:19.080 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 03:56:24.536 | INFO     | src.vectorstore.faiss_store:create_and_save_vectorstore:18 - Creating FAISS vector store...
+2026-05-16 03:56:26.443 | INFO     | src.vectorstore.faiss_store:create_and_save_vectorstore:22 - Saving vector store to D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 03:56:35.132 | INFO     | src.loaders.document_loader:save_uploaded_files:80 - Saved uploaded file to D:\Gen-Ai-apps\ai-pdf-chatbot\data\raw\lec19.transformer.pdf
+2026-05-16 03:56:35.133 | INFO     | src.loaders.document_loader:load_documents:24 - Loading PDF: D:\Gen-Ai-apps\ai-pdf-chatbot\data\raw\lec19.transformer.pdf
+2026-05-16 03:56:35.672 | INFO     | src.loaders.document_loader:load_documents:46 - Successfully loaded 102 pages from PDF: lec19.transformer.pdf
+2026-05-16 03:56:35.672 | INFO     | src.chunking.text_splitter:split_documents:17 - Splitting 102 documents. (chunk_size=1000, chunk_overlap=200)
+2026-05-16 03:56:35.675 | INFO     | src.chunking.text_splitter:split_documents:26 - Successfully split into 102 chunks.
+2026-05-16 03:56:35.676 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 03:56:41.207 | INFO     | src.vectorstore.faiss_store:create_and_save_vectorstore:18 - Creating FAISS vector store...
+2026-05-16 03:56:42.939 | INFO     | src.vectorstore.faiss_store:create_and_save_vectorstore:22 - Saving vector store to D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 03:56:48.789 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 03:56:54.295 | INFO     | src.vectorstore.faiss_store:load_vectorstore:36 - Loading existing vector store from D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 03:56:54.358 | INFO     | src.llm.groq_client:get_llm:18 - Initializing Groq LLM: llama-3.1-8b-instant
+2026-05-16 03:56:54.765 | INFO     | src.chains.rag_chain:create_rag_chain:35 - Creating strict RAG chain
+2026-05-16 04:00:42.149 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 04:00:48.615 | INFO     | src.vectorstore.faiss_store:load_vectorstore:36 - Loading existing vector store from D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 04:02:50.766 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 04:02:57.293 | INFO     | src.vectorstore.faiss_store:load_vectorstore:36 - Loading existing vector store from D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
+2026-05-16 04:04:29.052 | INFO     | src.embeddings.embedding_model:get_embeddings:12 - Initializing embeddings model: sentence-transformers/all-MiniLM-L6-v2
+2026-05-16 04:04:34.487 | INFO     | src.vectorstore.faiss_store:load_vectorstore:36 - Loading existing vector store from D:\Gen-Ai-apps\ai-pdf-chatbot\data\vector_store\faiss_index
