@@ -11,7 +11,7 @@
 ## 📸 Platform Preview
 
 <p align="center">
-  <img src="../apps-photo/image.png" width="800" alt="Aristotle Pro UI Preview">
+  <img src="phto/image.png" width="800" alt="Aristotle Pro UI Preview">
 </p>
 
 *The Aristotle Pro interface featuring the Aether V2 Design System, centered chat area, and premium research sidebar.*
@@ -31,12 +31,6 @@
 ## 🏗️ System Architecture
 
 Aristotle Pro is built on a modular, decoupled architecture designed for high-performance research and scalability.
-
-### 🧩 Core Components
-1. **Frontend (UI Layer)**: Developed using Streamlit with a custom 'Hardened Stealth' CSS engine. It provides an immersive dark-mode experience with centered content focus.
-2. **Orchestration Layer**: Powered by LangChain, managing the interaction between the LLM, the vectorstore, and the chat memory.
-3. **Intelligence Engine**: Utilizes Groq (Llama-3.3-70b) for ultra-fast, high-reasoning inference.
-4. **Vector Storage**: Implements FAISS for high-speed semantic search and document retrieval.
 
 ### 🔄 System Workflow
 ```mermaid
