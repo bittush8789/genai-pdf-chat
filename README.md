@@ -23,62 +23,67 @@
 - **🎯 Ultra-Strict RAG Architecture**: Zero-hallucination logic ensures answers are derived exclusively from uploaded documents.
 - **🌍 Bilingual Intelligence**: Seamlessly switch between professional English and academic Hindi research modes.
 - **🔍 Source Transparency**: Perplexity-style citations including PDF filenames, page numbers, and italicized semantic snippets.
-- **💠 Aether Pro UI/UX**: A startup-grade, glassmorphism-inspired dark theme with centered content layouts and smooth animations.
-- **⚡ Neural Engine Support**: Compatible with state-of-the-art LLMs (Llama 3.3, Groq, etc.) via a persistent vector storage layer.
+- **💠 Aether Pro UI/UX**: A startup-grade, glassmorphism-inspired dark theme with centered content layouts.
 - **🛡️ Hardened Security**: Production-ready error handling that suppresses technical stack traces and implementation leaks.
 
 ---
 
-## 🛠️ Technology Stack
+## 🏗️ System Architecture
 
-- **Core**: Python 3.10+
-- **Frontend**: Streamlit (Hardened Stealth Mode)
-- **LLM Orchestration**: LangChain, LangGraph
-- **Vector Database**: FAISS (High-Performance Semantic Indexing)
-- **Inference**: Groq (Llama-3.1/3.3 Series)
-- **Document Processing**: PyPDF, PDFPlumber, Pydantic
-- **Styling**: Vanilla CSS, Glassmorphism Design System
+Aristotle Pro is built on a modular, decoupled architecture designed for high-performance research and scalability.
 
----
+### 🧩 Core Components
+1. **Frontend (UI Layer)**: Developed using Streamlit with a custom 'Hardened Stealth' CSS engine. It provides an immersive dark-mode experience with centered content focus.
+2. **Orchestration Layer**: Powered by LangChain, managing the interaction between the LLM, the vectorstore, and the chat memory.
+3. **Intelligence Engine**: Utilizes Groq (Llama-3.3-70b) for ultra-fast, high-reasoning inference.
+4. **Vector Storage**: Implements FAISS for high-speed semantic search and document retrieval.
 
-## 📦 Installation
-
-### 1. Clone the Repository
-```bash
-git clone https://github.com/yourusername/aristotle-pro.git
-cd aristotle-pro
-```
-
-### 2. Set Up Virtual Environment
-```bash
-python -m venv venv
-# Windows
-.\venv\Scripts\activate
-# Mac/Linux
-source venv/bin/activate
-```
-
-### 3. Install Dependencies
-```bash
-pip install -r requirements.txt
+### 🔄 System Workflow
+```mermaid
+graph LR
+    A[PDF Upload] --> B[Text Extraction]
+    B --> C[Recursive Chunking]
+    C --> D[Embedding Generation]
+    D --> E[FAISS Indexing]
+    E --> F[Semantic Retrieval]
+    F --> G[Contextual Prompting]
+    G --> H[Multilingual Response]
 ```
 
 ---
 
-## 🏗️ Project Architecture
+## 📂 Project Structure
 
 ```text
 ai-pdf-chatbot/
-├── app.py                # Application Entry Point
+├── app.py                # Main Application Entry Point
 ├── src/
-│   ├── chains/           # RAG Orchestration Logic
-│   ├── ui/               # Aether Pro Design Components
-│   ├── vectorstore/      # FAISS Index Management
-│   ├── prompts/          # Anti-Hallucination Prompt Engineering
-│   ├── memory/           # Persistent Chat History
-│   └── utils/            # Multilingual Translation & Logging
-└── requirements.txt      # Dependency Manifest
+│   ├── chains/           # RAG Chain & Orchestration Logic
+│   ├── chunking/         # Text Splitting & Normalization
+│   ├── config/           # Global Settings & API Management
+│   ├── embeddings/       # Embedding Model Integrations
+│   ├── llm/              # LLM Client (Groq/Llama)
+│   ├── loaders/          # Document & OCR Parsers
+│   ├── memory/           # Persistent Session Memory
+│   ├── prompts/          # Anti-Hallucination System Prompts
+│   ├── ui/               # Aether Pro Design System & Components
+│   ├── utils/            # Translation, Logging & Helpers
+│   └── vectorstore/      # FAISS Vector Storage Logic
+├── tests/                # Automated Logic Validation
+├── logs/                 # Secure System Logging
+└── requirements.txt      # Production Dependency Manifest
 ```
+
+---
+
+## 🛠️ Tech Stack
+
+- **Core**: Python 3.10+
+- **Frontend**: Streamlit (Advanced CSS)
+- **RAG Framework**: LangChain
+- **Database**: FAISS
+- **Model**: Groq Llama-3.3-70b
+- **Styling**: Vanilla CSS (Glassmorphism)
 
 ---
 
@@ -86,7 +91,7 @@ ai-pdf-chatbot/
 
 **Bittu Sharma**  
 *AI Research Lead & Engineer*  
-Dedicated to building the future of Document Intelligence.
+Building the future of Document Intelligence.
 
 ---
 
